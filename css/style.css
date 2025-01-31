@@ -1,4 +1,3 @@
-/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +7,6 @@
 body {
     font-family: 'Edu NSW ACT Foundation', cursive;
     background-color: skyblue;
-   
 }
 
 h3 {
@@ -27,19 +25,18 @@ span {
     margin: 0 auto;
 }
 
+/* Header Section */
 .header {
     background: radial-gradient(#676878, rgb(102, 255, 153));
     padding: 10px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: -webkit-sticky; /* For Safari */
     position: sticky;
     top: 0;
-    border-bottom: 2px solid #ccc; /* Optional: adds a border for visual separation */
-    z-index: 1000; /* Ensure the header stays above other content */
-    width: 100%; /* Ensure the header spans the full width */
-    
+    border-bottom: 2px solid #ccc;
+    z-index: 1000;
+    width: 100%;
 }
 
 .header .container {
@@ -57,10 +54,11 @@ span {
     transform: scale(1.1);
 }
 
+/* Navbar Styles */
 nav {
     display: flex;
     align-items: center;
-    font-size: 25px; 
+    font-size: 25px;
 }
 
 .navbar-menu {
@@ -74,20 +72,20 @@ nav {
     margin-left: 10px;
     font-size: 20px;
     padding: 10px;
-    
-    justify-content: space-between;
 }
 
 .navbar-menu a {
     text-decoration: none;
-    
+    color: #333;
 }
 
 .navbar-menu a:hover {
     background-color: red;
+    color: white;
     border-radius: 4px;
 }
 
+/* Hamburger Menu */
 .hamburger {
     display: none;
     cursor: pointer;
@@ -96,18 +94,18 @@ nav {
 /* Responsive Styles */
 @media (max-width: 800px) {
     .navbar-menu {
-        display: none; /* Initially hide the menu */
+        display: none;
         flex-direction: column;
         width: 100%;
         background-color: #333;
         position: absolute;
-        top: 60px; /* Adjust based on header height */
+        top: 60px;
         left: 0;
         z-index: 1000;
     }
 
     .navbar-menu.active {
-        display: flex; /* Show the menu when active */
+        display: flex;
     }
 
     .hamburger {
@@ -123,7 +121,7 @@ nav {
 
     .navbar-menu a {
         color: white;
-        padding: 15px; /* Increase padding for better touch targets */
+        padding: 15px;
         display: block;
         text-align: center;
     }
@@ -133,7 +131,7 @@ nav {
     }
 }
 
-/* Additional Media Queries for Smaller Screens */
+/* Additional Media Queries */
 @media (max-width: 600px) {
     .header .container {
         flex-direction: column;
@@ -147,10 +145,6 @@ nav {
 
     .box-container {
         flex: 1 1 100%;
-    }
-
-    .banner, .gallery, .pricing, .features, .contact {
-        margin: 10px;
     }
 
     .footer .row {
@@ -172,11 +166,13 @@ a {
 }
 
 #login-btn {
-    background-color: green;
+    background-color: blue;
+    color: white;
 }
 
 #register-btn {
-    background-color: yellow;
+    background-color: blue;
+    color: white;
 }
 
 #admin-btn {
@@ -273,11 +269,13 @@ p {
     border-radius: 25px;
     margin-left: 50px;
     margin-bottom: 20px;
+    transition: all 0.3s ease;
 }
 
 .btn:hover {
     background-color: darkmagenta;
     color: darkcyan;
+    transform: scale(1.05);
 }
 
 .box {
@@ -289,60 +287,6 @@ p {
     max-height: 300px;
     line-height: 300px;
     margin-top: 5px;
-}
-
-.title {
-    text-align: left;
-    color: #555;
-}
-
-.gallery {
-    background-color: skyblue;
-    margin: 30px 20px;
-}
-
-.pricing, .features {
-    background-color: skyblue;
-    margin: 20px;
-}
-
-.pricing p {
-    font-size: larger;
-}
-
-.plan {
-    color: blue;
-    font-size: 18px;
-}
-
-.trainer {
-    flex: 1;
-    min-width: 300px;
-    margin-bottom: 30px;
-    transition: transform 0.5s;
-}
-
-.trainer:hover {
-    transform: translateY(-5px);
-}
-
-.trainer img {
-    max-width: 100%;
-    padding: 10px;
-    border-radius: 20px;
-    transition: transform 3s;
-}
-
-.banner {
-    font-family: Times New Roman;
-    color: darkcyan;
-    background-color: coral;
-    margin: 10px 20px 40px;
-    padding: 0 15px;
-}
-
-.contact {
-    background-color: chocolate;
 }
 
 .footer .row {
