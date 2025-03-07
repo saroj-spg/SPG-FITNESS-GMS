@@ -3,144 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
-    <title>fitness</title>
-    <!--custum  css file-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+    <!-- Custom CSS file -->
     <link rel="stylesheet" href="css/style.css"> 
-    <!--- font awesome cdn link-->
+    <!-- Font Awesome CDN link -->
     <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        
+        /* Trainers section */
+        .trainers {
+            padding: 50px 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .trainers .heading {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        .trainer {
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 25%;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .trainer:hover {
+            transform: scale(1.05);
+        }
+        .trainer img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .trainer .content {
+            padding: 20px;
+        }
+        .trainer .content h3 {
+            font-size: 24px;
+            color: #333;
+        }
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-
+        
+        
+    </style>
 </head>
 <body>
-    <body>
-        <h1 style="text-align:center; font-style:italic;font-size:50px; font-family:serif; color:#d20404; background-color: skyblue;">
-            FITNESS AND GYM CENTER
-        </h1>
-        <!-- Header section starts -->
-        <header class="header">
-            
-            <div class="container">
-                <div class="logo">
-                    <a href="#" ></a> <img src="image/logo.jpg" width="20%" style="mix-blend-mode: multiply ;"></a>
-                </div>
-                <nav>
-               
-                    <ul class="navbar-menu">
-                        <li><a href="index.html"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="features.html">Features</a></li>
-                        <li><a href="courses.html">Courses</a></li>
-                        <li><a href="trainers.html">Trainers</a></li>
-                        <li><a href="gallery.html">Gallery</a></li> 
-                        <li><a href="contact.php">Contact</a></li>
-                        <li><a href="login.php" id="login-btn">Login</a></li>
-                    <li><a href="reg.php" id="register-btn">Register</a></li>
-                    <li><a href="admin-login.php" id="admin-btn">Admin</a></li>
-                    </ul>
-                    <div class="hamburger" id="hamburger-menu">
-                        <i class="fa fa-bars"></i>
-                    </div>
-                </nav>
-            </div>
-        
-            
-        </header>
-        <!-- Header section ends -->
+
+<!-- Header section starts -->
     
-        <!--trainer section started-->
 
-<section class="trainers">
-
-    <h3 class="heading">Expert trainers</h3>
-    <div class="box-container">
-        <div class="row">
-        <div class="trainer">
-            <img src="image/trainer1.jpg" width="400px" height="400px">
-            <div class="content">
-                <span>expert trainer</span>
-                <h3>Thomas</h3>
-            </div>
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="#"><img src="image/logo.jpg" width="20%" style="mix-blend-mode: multiply;"></a>
         </div>
-        <div class="trainer">
-            <img src="image/trainer2.jpg"width="400px" height="400px">
-            <div class="content">
-                <span>expert trainer</span>
-                <h3>james</h3>
+        <nav>
+            <ul class="navbar-menu" id="navbar-menu">
+                <li><a href="index.html"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="trainers.html">Trainers</a></li>
+                <li><a href="gallery.html">Gallery</a></li> 
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="login.php" id="login-btn">Login</a></li>
+                <li><a href="reg.php" id="register-btn">Register</a></li>
+                <li><a href="admin-login.php" id="admin-btn">Admin</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger-menu">
+                <i class="fa fa-bars"></i>
             </div>
-        </div>
-        <div class="trainer">
-            <img src="image/trainer3.jpg"width="400px" height="400px">
-            <div class="content">
-                <span>expert trainer</span>
-                <h3>salina</h3>
-            </div>
-        </div>
-        <div class="trainer">
-            <img src="image/trainer(4).jpg"width="400px" height="400px">
-            <div class="content">
-                <span>expert trainer</span>
-                <h3>sophia</h3>
-            </div>
-        </div>
-
+        </nav>
     </div>
-    </div>
-</section>
-<!--trainer section end-->
-<!--footer-->
-<div class="footer">
-    <div class="box-container">
-        <div class="row">
-            <div class="footer-col-1">
-                <h4>Download our App  </h3>
-                <p>Download App for Android and <br>ios mobile phone</p>
-                <div class="app-logo">
-                    <a href=""><img src="image/applogo1.png" width="175px" height="75px"></a>
-                    <a href=""><img src="image/applogo2.png" width="175px" height="75px"></a>
+</header>
+
+
+    <!-- Header section ends -->
+
+    <!-- Trainer section -->
+    <section class="trainers">
+        <h3 class="heading">Expert Trainers</h3>
+        <div class="box-container">
+            <div class="trainer">
+                <img src="image/trainer1.jpg" alt="Trainer 1">
+                <div class="content">
+                    <span>Expert Trainer</span>
+                    <h3>Thomas</h3>
                 </div>
             </div>
-            <div class="footer-col-2">
-                <img src="image/logo.jpg" width="50px" height="50px" style="mix-blend-mode: multiply ;">
-                
-                
-            <p>our purpose is to sustaibably make the pleasure<br> 
-                and Benifits of fitness Accessible to the Many.</p>
+            <div class="trainer">
+                <img src="image/trainer2.jpg" alt="Trainer 2">
+                <div class="content">
+                    <span>Expert Trainer</span>
+                    <h3>James</h3>
+                </div>
+            </div>
+            <div class="trainer">
+                <img src="image/trainer3.jpg" alt="Trainer 3">
+                <div class="content">
+                    <span>Expert Trainer</span>
+                    <h3>Salina</h3>
+                </div>
+            </div>
+            <div class="trainer">
+                <img src="image/trainer(4).jpg" alt="Trainer 4">
+                <div class="content">
+                    <span>Expert Trainer</span>
+                    <h3>Sophia</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer section -->
+   <footer class="footer">
+    <div class="container">
+        <div class="footer-row">
+            <!-- Footer Column 1 -->
+            <div class="footer-col">
+                <h4>Download our App</h4>
+                <p>Download the App for Android and iOS mobile phones</p>
+                <div class="app-logo">
+                    <a href="#" target="_blank"><img src="image/applogo1.png" width="175" height="75" alt="Android App"></a>
+                    <a href="#" target="_blank"><img src="image/applogo2.png" width="175" height="75" alt="iOS App"></a>
+                </div>
+            </div>
+            
+            <!-- Footer Column 2 -->
+            <div class="footer-col">
+                <img src="image/logo.jpg" width="50" height="50" alt="Logo" style="mix-blend-mode: multiply;">
+                <p>Our purpose is to sustainably make the pleasure and benefits of fitness accessible to the many.</p>
                 <ul>
-               <li> Helping you to take fitness to the top level.</li>
-               <li> Get stronger and fitter with us.</li>
-                <li>Push yourself harder to become better.</li>
-                <li>Finding your inner fitness instinct.</li>
-                <li>Keep calm and gym with us.</li>
-                <li>Refining your fitness levels.</li>
-               <li>Work hard to become strong.</li>
-                <li>Fitness is the way forward.</li>
+                    <li>Helping you to take fitness to the top level.</li>
+                    <li>Get stronger and fitter with us.</li>
+                    <li>Push yourself harder to become better.</li>
+                    <li>Finding your inner fitness instinct.</li>
+                    <li>Keep calm and gym with us.</li>
+                    <li>Refining your fitness levels.</li>
+                    <li>Work hard to become strong.</li>
+                    <li>Fitness is the way forward.</li>
                 </ul>
             </div>
-            <div class="footer-col-3">
-                <h4>Follow Us</h3> </h3>
-                   <span>Facebook</span><i class="fa-brands fa-facebook" style="color: #1f2551;"></i>
-                   <br>
-                    <span>Instagram</span> <i class="fa-brands fa-instagram"></i><br>
-                    <span>Twitter</span> <i class="fa-brands fa-twitter"></i><br>
-                    <span>Youtube</span><i class="fa-brands fa-youtube" style="color: #d20404;"></i><br>
             
+            <!-- Footer Column 3 -->
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <span>Facebook</span> <i class="fa-brands fa-facebook" style="color: #1f2551;"></i><br>
+                <span>Instagram</span> <i class="fa-brands fa-instagram"></i><br>
+                <span>Twitter</span> <i class="fa-brands fa-twitter"></i><br>
+                <span>Youtube</span> <i class="fa-brands fa-youtube" style="color: #d20404;"></i><br>
             </div>
-            <div class="footer-col-4">
-                <h4>Contact Details</h3> 
-                    <i class="fa-solid fa-location-dot"></i><span> location:chandrapur,Rautahat</span>
-                    <span><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227258.69690216536!2d85.25454780655235!3d27.12741973416539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb6233d5c7f02b%3A0x12ca576cbfa1c14e!2sChandrapur!5e0!3m2!1sen!2snp!4v1681219802847!5m2!1sen!2snp" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></span>
-                   <br> <i class="fa-solid fa-envelope"></i><span> Email:spg@gamil.com</span>
-   
-            </div>
-        </div><hr>
             
-            <p class="copyright"> <i>Copyright&copy 2023@Spg <span>All right reserved!</span></i></p>
+            <!-- Footer Column 4 -->
+            <div class="footer-col">
+                <h4>Contact Details</h4>
+                <i class="fa-solid fa-location-dot"></i><span> Location: Chandrapur, Rautahat</span>
+                <span><iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></span><br>
+                <i class="fa-solid fa-envelope"></i><span> Email: spg@gmail.com</span>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright"><i>Copyright &copy; 2023@Spg <span>All rights reserved!</span></i></p>
     </div>
-</div>
-<srcript scr="https://unpkg.com/swipper-bundle.min.js"></srcript>
-<!--custom js file link-->
-<script src="js/script.js"></script>
+</footer>
+
+
+<!-- Include JS file -->
+<script src="js/script1.js"></script>
 </body>
 </html>
